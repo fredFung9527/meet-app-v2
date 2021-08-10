@@ -1,0 +1,9 @@
+{
+  "meeting": "Meeting Notification",
+  "newMeeting": "Send me an email if a meeting is created",
+  "rescheduleMeeting": "Send me an email if a meeting is rescheduled",
+  "cancalMeeting": "Send me an email if a meeting is cancelled",
+  "note": "Note Notification",
+  "newNote": "Send me an email if a note is created",
+  "mergeNote": "Send me an email if some notes need to be merged"
+}
