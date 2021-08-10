@@ -16,15 +16,18 @@ export default function SelectMeeting(props) {
   const { t } = useTranslation(['note', 'common'])
 
   const [open, setOpen] = React.useState(true)
-  const [options, setOptions] = React.useState([])
+  const [options, setOptions] = React.useState([{
+    ...sampleMeeting,
+    dateTime: dateFromUTC(sampleMeeting.dateTime)
+  }])
 
   const loadOptions = (event, input) => {
     if (event.type !== 'change') return
     if (!input) return
-    setOptions([{
-      ...sampleMeeting,
-      dateTime: dateFromUTC(sampleMeeting.dateTime)
-    }])
+    // setOptions([{
+    //   ...sampleMeeting,
+    //   dateTime: dateFromUTC(sampleMeeting.dateTime)
+    // }])
   }
 
   return (

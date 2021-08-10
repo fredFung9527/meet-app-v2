@@ -31,7 +31,7 @@ export default function NotificationButton(props) {
     const loadNotifications = async () => {
       const result = (await import('/data')).fakeNotifications
       dispatch(setList(result))
-      if (result.length && router.pathname !== '/notifications') setOpen(true)
+      // if (result.length && router.pathname !== '/notifications') setOpen(true)
     }
     await loadNotifications()
   }, [])

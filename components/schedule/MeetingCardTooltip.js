@@ -76,7 +76,7 @@ export default function MeetingCardTooltip(props) {
           {appointmentData.status === 'pending' && <TextButton><DoneAllIcon className="mr-1"/>{t('confirm')}</TextButton>}
           <EditMeetingButton meeting={appointmentData}/>
           {['no-note', 'approved', 'finish'].indexOf(appointmentData.status) >= 0 && 
-            <TextButton color="primary"><RateReviewIcon className="mr-1"/>{t('note')}</TextButton>
+            <TextButton color="primary" to="/new-note?meeting=abc"><RateReviewIcon className="mr-1"/>{t('note')}</TextButton>
           }
         </DialogActions>
       </div>
