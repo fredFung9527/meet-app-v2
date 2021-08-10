@@ -8,7 +8,7 @@ import {
   addInternalParticipants, setInternalParticipants, setOtherParticipants
 } from '/store/meetingSlice'
 import { internalParticipants, meetingStatuseColors } from '/data/meeting-settings'
-import { find, concat, keys } from 'lodash'
+import { find, concat, keys, map } from 'lodash'
 
 import CheckBox from '../CheckBox'
 import MyDatePicker from '/components/MyDatePicker'
@@ -217,7 +217,7 @@ export function MeetingMarkrtCodeOrCompanyName(props) {
 
   const handleConfirmSelection = () => {
     dispatch(addInternalParticipants(
-      suggestedInternalParticipants.filter(it => selectedInternalParticipants[it.userID])
+      map(suggestedInternalParticipants.filter(it => selectedInternalParticipants[it.userID]), it => it.userID)
     ))
     setOpen(false)
   }
