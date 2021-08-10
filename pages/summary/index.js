@@ -22,7 +22,7 @@ import LargeDialog from '/components/LargeDialog'
 import MyDatePicker from '/components/MyDatePicker'
 import SimpleTable from '/components/SimpleTable'
 import CheckBoxGroup from '/components/CheckBoxGroup'
-import Legend from '/components/schedule/legend'
+import Legend from '/components/schedule/Legend'
 import MyTabs from '/components/MyTabs'
 import InternalUserPicker from '/components/InternalUserPicker'
 

@@ -10,7 +10,7 @@ import { startOfMonth, endOfMonth, isBefore, isAfter } from 'date-fns'
 import { setLoading, alertError } from '/store/commonSlice'
 import { dateToDB, dateFromUTC, getYearOptions } from '/helpers'
 
-import Legend from '/components/schedule/legend'
+import Legend from '/components/schedule/Legend'
 import Calendar from '/components/schedule/Calendar'
 import NewMeetingButton from '/components/meeting/NewMeetingButton'
 import MeetingFilterButton from '/components/meeting/Filter'

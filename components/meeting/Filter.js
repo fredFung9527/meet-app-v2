@@ -8,7 +8,7 @@ import {
   Grid, InputAdornment
 } from '@material-ui/core'
 import TextInput from '../TextInput'
-import Legend from '/components/schedule/legend'
+import Legend from '/components/schedule/Legend'
 import CheckBoxGroup from '../CheckBoxGroup'
 import InternalUserPicker from '../InternalUserPicker'
 

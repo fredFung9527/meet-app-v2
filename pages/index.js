@@ -20,7 +20,7 @@ import {
 } from '@material-ui/core'
 import MyMenuItem from '/components/MyMenuItem'
 import DaySchedule from '/components/schedule/DaySchedule'
-import Legend from '/components/schedule/legend'
+import Legend from '/components/schedule/Legend'
 import DoughnutChart from '/components/charts/DoughnutChart'
 import NewMeetingButton from '/components/meeting/NewMeetingButton'
 import BoxButton from '/components/BoxButton'
