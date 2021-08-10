@@ -8,7 +8,7 @@ export function generateMeetings(startDate, endDate, t, dayStep=1) {
     let current = startDate
     const meetingStatuses = keys(meetingStatuseColors)
     while (isBefore(current, endDate)) {
-      const randomMeetingCount = Math.floor(Math.random() * 4)
+      const randomMeetingCount = Math.floor(Math.random() * 4) + 1
       Array(randomMeetingCount).fill(0).forEach(idx => {
         const meetingTypeIdx = Math.floor(Math.random() * meetingTypes.length)
         const statusIdx = Math.floor(Math.random() * meetingStatuses.length)

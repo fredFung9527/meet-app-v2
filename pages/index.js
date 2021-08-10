@@ -129,8 +129,8 @@ function Scheduler(props) {
         <Grid item xs={12} sm={6} style={{height: 'calc(100vh - 84px)', overflow: 'auto'}}>
           <DaySchedule meetings={filteredMeetings} currentDate={currentDate} setCurrentDate={setCurrentDate}/>
         </Grid>
-        <Grid item xs={12} sm={6} container className="px-4">
-          <Grid item className={classNames(classes.centerBox, 'py-4')}>
+        <Grid item xs={12} sm={6} container className="px-2">
+          <Grid item className={classNames(classes.centerBox, 'py-2')}>
             <DoughnutChart data={chartData} options={chartOptions} height="200px" width="200px"/>
           </Grid>
           <Grid item className={classes.centerBox}>
@@ -141,7 +141,7 @@ function Scheduler(props) {
               showCount counts={statusSummary} 
             />
           </Grid>
-          <Grid item container className={classNames(classes.centerBox, 'py-4')}>
+          <Grid item container className={classNames(classes.centerBox, 'py-2')}>
             <NewMeetingButton box/>
             <BoxButton to="/schedule" variant="outlined" style={{width: '100%'}} className="my-2">
               <DateRangeIcon className="mr-1"/>{t('schedule')}
